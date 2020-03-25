@@ -25,7 +25,7 @@ namespace MapleShark
                 pTimestamp.ToString("yyyy-MM-dd HH:mm:ss.fff"),
                 pOutbound ? "Outbound" : "Inbound",
                 pBuffer.Length.ToString(),
-                "0x" + pOpcode.ToString("X4"),
+                pOpcode.ToString(),//"0x" + pOpcode.ToString("X4") + "(" + pOpcode + ")",
                 pName })
         {
             Timestamp = pTimestamp;
